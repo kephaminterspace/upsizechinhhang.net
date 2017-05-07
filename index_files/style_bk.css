@@ -255,9 +255,9 @@ header.active #top-menu ul li:last-child a{
 }
 
 .price {
-  float:left;
+/*  float:left;
   line-height: 87px;
-  padding-left: 10px;
+  padding-left: 10px;*/
 }
 
 .spec-price {

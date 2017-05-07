@@ -1,754 +1,790 @@
 @import url(reset.css);
 *:focus {
-  outline:none;
+    outline:none;
 }
 header, section, hgroup, nav, footer, article {
-  display: block;
+    display: block;
 }
 
 strong {
-  font-weight:bold;
+    font-weight:bold;
 }
 
 .clear{
-  clear: both;
+    clear: both;
 }
 
 a:hover{
-  text-decoration:none;
+    text-decoration:none;
 }
 
 
 body {
-  background: #fff;
-  color:#000;
-  font-family: MetaPro, Myriad Pro;
-  font-size: 16px;
+    background: #fff;
+    color:#000;
+    font-family: MetaPro, Myriad Pro;
+    font-size: 16px;
 }
 
 #wrapper {
-  width: 100%;
-  padding-top: 83px;
+    width: 100%;
+    padding-top: 60px;
 }
 
 header {
-  background: url("header-bg.png") repeat-x scroll 0 0 transparent;
-  width: 100%;
-  height: 83px;
-  position: fixed;
-  z-index: 999;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    /*    background: url("header-bg.png") repeat-x scroll 0 0 transparent;*/
+    background-color: #fff;
+    width: 100%;
+    /*    height: 83px;*/
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     filter: alpha(opacity=90);
     -khtml-opacity: 0.95;
     -moz-opacity: 0.95;
-  opacity: 0.95;
+    opacity: 0.95;
 }
 
 header.active {
-  background: #fff;
+    background: #fff;
 }
 
 header.active .last-child{
-  background: url("yellow.png") no-repeat scroll 0 0px transparent;
+    /*background: url("yellow.png") no-repeat scroll 0 0px transparent;*/
 }
 
 header.active .shadow {
-  display:block;
+    /*display:block;*/
 }
-
-header.active #top-menu ul li a{
-  color:#000;
+header.active #top-menu ul li a, header.active #newMenu .coreMenu ul li:last-child a{
+    color:#000;
 }
 
 header.active #top-menu ul li a:hover, header.active #top-menu ul li.active a{
-  color:#fff;
+    color:#fff;
 }
 
 header.active #top-menu ul li:last-child a{
-  -ms-border-radius: 20px;
-  color:#000;
+    -ms-border-radius: 20px;
+    color:#000;
 }
 
 .last-child  {
-  height: 36px;
-  padding-right: 7px;
-  margin-top: -3px;
+    height: 36px;
+    padding-right: 7px;
+    margin-top: -3px;
 }
 
 .last-child a {
-  line-height: 36px !important;
+    line-height: 36px !important;
 }
 
 .last-child:hover{
-  background: url("yellow.png") no-repeat scroll 0 0 transparent !important;
+    background: url("yellow.png") no-repeat scroll 0 0 transparent !important;
 }
 
 
 .last-child:hover a, .last-child:hover a span {
-  background: none !important;
-  color:#000 !important;
+    background: none !important;
+    color:#000 !important;
 }
 
 .header-content {
-  width: 975px;
-  height: 100%;
-  margin:0 auto;
+    /*width: 975px;*/
+    height: 100%;
+    margin:0 auto;
 }
 
 #top-menu {
-  padding-top: 30px;
+    padding-top: 10px;
 }
 
 #top-menu ul{
-  display:block;
+    display:block;
+    float: right;
+    margin-top: 3px;
 }
 
 #top-menu ul li{
-  display:block;
-  float:left;
-  margin-left: 43px;
+    display:block;
+    float:left;
+    margin-left: 43px;
 }
 
 #top-menu ul li:first-child {
-  margin-left:0;
+    margin-left:0;
 }
 
-#top-menu ul li:last-child a, .last-child a {
-  color: #fec707;
+#top-menu ul li:last-child a, .last-child a, #newMenu .coreMenu ul li:last-child{
+    color: #fec707;
 }
 
 #top-menu ul li a{
-  height: 31px;
-  color: #e1e1e1;
-  display: block;
-  font-size: 16px;
-  text-decoration: none;
-  line-height: 31px;
+    height: 31px;
+    color: #000;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 31px;
 }
 
 #top-menu ul li a span {
-  margin:0 15px;
-  height: 31px;
-  display:block;
+    margin:0 15px;
+    height: 31px;
+    display:block;
 }
 
+
 #top-menu ul li:hover, #top-menu ul li.active{
-  background: url("menu_a_left.png") no-repeat scroll left 0 transparent;
+    background: url("menu_a_left.png") no-repeat scroll left 0 transparent;
 }
 
 #top-menu ul li:hover a, #top-menu ul li.active a{
-  background: url("menu_a_right.png") no-repeat scroll right 0 transparent;
+    background: url("menu_a_right.png") no-repeat scroll right 0 transparent;
 }
 
 #top-menu ul li:hover a span, #top-menu ul li.active a span{
-  background: url("menu_a_center.png") repeat-x scroll right 0 transparent;
+    background: url("menu_a_center.png") repeat-x scroll right 0 transparent;
+    color: white;
 }
 
 #info {
-  background: url("bg-gradient.jpg") repeat-x scroll center 0 transparent;
-  height: 502px;
+    background: url("bg-gradient.jpg") repeat-x scroll center 0 transparent;
+    height: 502px;
 }
 .p1_label{
-  font-size: 60px;
-  text-align: center;
-  font-family: 'MetaPro', 'Myriad Pro';
-  margin-bottom: 40px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'MetaPro', 'Myriad Pro';
+    /*margin-bottom: 40px;*/
 }
 .info-content {
-  background: url("bg-1.png") no-repeat scroll center 0 transparent;
+    background: url("bg-1.png") no-repeat scroll center 0 transparent;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .info_pack{
-  position: absolute;
-  top: 100px;
-  right: -60px;
-  height: 420px;
+    /*  position: absolute;
+      top: 100px;
+      right: -60px;*/
+    /*height: 420px;*/
+    /*width: 100%;*/
 }
 .shadow {
-  background: url("shadow.png") repeat-x scroll center 0 transparent;
-  width: 100%;
-  height: 5px;
-  position:absolute;
-  bottom: -6px;
-  display:none;
+    background: url("shadow.png") repeat-x scroll center 0 transparent;
+    width: 100%;
+    height: 5px;
+    position:absolute;
+    bottom: -6px;
+    display:none;
 }
 
 .info-content-body {
-  width: 975px;
-  margin:0 auto;
-  position:relative;
+    /*width: 975px;*/
+    margin:0 auto;
+    position:relative;
 }
 
 .flag {
-  background: url("flag.png") no-repeat scroll center 0 transparent;
-  width: 110px;
-  height: 109px;
-  position:absolute;
-  right:0;
-  top:0;
-  color:#fff;
-  text-align:center;
-  font-size: 18px;
+    background: url("flag.png") no-repeat scroll center 0 transparent;
+    width: 110px;
+    height: 109px;
+    /*  position:absolute;
+      right:0;
+      top:0;*/
+    color:#fff;
+    text-align:center;
+    font-size: 18px;
 }
 
 .flag span {
-  font-size: 20px;
-  font-weight:bold;
-  display:block;
-  margin: 15px 0 5px;
+    font-size: 20px;
+    font-weight:bold;
+    display:block;
+    margin: 0px 0 5px;
 }
 
 .info-block {
     margin-left: 345px;
-
     width: 295px;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 .info-block h3{
-  font-size: 18px;
-  color:#9e0039;
-  font-weight:bold;
-  margin-bottom: 5px;
-  padding-left: 32px;
+    font-size: 18px;
+    color:#9e0039;
+    font-weight:bold;
+    margin-bottom: 5px;
+    padding-left: 32px;
 }
 
 .info-lists {
-  display:block;
+    display:block;
 }
 
 .info-lists li {
-  display:block;
-  margin-top: 30px;
+    display:block;
+    margin-top: 30px;
 }
 
 .info-lists li img {
-  margin-right: 15px;
-  float: left;
+    margin-right: 15px;
+    float: left;
 }
 
 .middle-menu {
-  background: url("bg-middle-menu.png") no-repeat scroll center 0 transparent;
-  width: 981px;
-  height: 87px;
-  position:absolute;
-  left: 0px;
-  bottom: -167px;
-  z-index: 2;
+    background: url("bg-middle-menu.png") no-repeat scroll center 0 transparent;
+    width: 981px;
+    height: 87px;
+    position:absolute;
+    left: 0px;
+    /*bottom: -167px;*/
+    z-index: 2;
 }
 
 .only-today {
-  background: url("only-today.png") no-repeat scroll 0 0 transparent;
-  width: 110px;
-  height: 63px;
-  font-size: 18px;
-  padding-left: 33px;
-  padding-top: 24px;
-  text-transform: uppercase;
-  float:left;
+    background: url("only-today.png") no-repeat scroll 0 0 transparent;
+    width: 150px;
+    height: 90px;
+    font-size: 18px;
+    padding-left: 17px;
+    padding-top: 24px;
+    text-transform: uppercase;
+    float: left;
 }
 
 .price {
-  float:left;
-  line-height: 87px;
-  padding-left: 10px;
+    /*    float:left;
+        line-height: 87px;
+        padding-left: 10px;*/
 }
 
 .spec-price {
-  float:left;
-  font-weight:bold;
-  font-size:20px;
-  margin-right: 10px;
+    float: left;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 30px;
 }
 
 .old-price {
-  float:left;
-  color:#db1a4a;
-  font-weight:bold;
-  font-size: 20px;
+    float: left;
+    color: #db1a4a;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: -20px;
 }
 
 .line {
-  background: url("line.png") no-repeat scroll 0 center transparent;
+    background: url("line.png") no-repeat scroll 0 center transparent;
 }
 .btn-order, .js_submit{
-  transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
 
 }
 .btn-order:hover, .js_submit:hover{
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 
 }
 .diskount {
-  background: url("diskount.png") no-repeat scroll 0 0 transparent;
-  width: 120px;
-  height: 121px;
-  position:absolute;
-  right: 215px;
-  top: -23px;
-  font-size: 18px;
-  color:#fff;
-  line-height: normal;
-  text-align: center;
-  padding-top: 35px;
-  font-weight: bold;
+    background: url("diskount.png") no-repeat scroll 0 0 transparent;
+    width: 120px;
+    height: 121px;
+    /* position: absolute; */
+    /* right: 215px; */
+    /* top: -23px; */
+    font-size: 18px;
+    color: #fff;
+    line-height: normal;
+    text-align: center;
+    padding-top: 35px;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-left: -25px;
 }
 
 .diskount div:first-child {
-  font-size: 22px;
+    font-size: 22px;
 }
 
 .btn-order {
-  background: url("btn-order.png") no-repeat scroll 0 0 transparent;
-  width: 173px;
-  height: 45px;
-  display:block;
-  float:right;
-  text-align:center;
-  line-height: 45px;
-  color:#000;
-  font-size: 22px;
-  text-decoration:none;
-  text-transform:uppercase;
-  margin-top: 21px;
-  margin-right: 30px;
+    background: url("btn-order.png") no-repeat scroll 0 0 transparent;
+    width: 173px;
+    height: 45px;
+    display:block;
+    float:right;
+    text-align:center;
+    line-height: 45px;
+    color:#000;
+    font-size: 22px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin-top: 21px;
+    margin-right: 30px;
 }
 
 #result {
-  background: url("bg-2.jpg") no-repeat scroll center 0 transparent;
-  height: 531px;
-  background-size: cover;
-  position:relative;
+    background: url("bg-2.jpg") no-repeat scroll center 0 transparent;
+    /*height: 531px;*/
+    background-size: cover;
+    position:relative;
+    padding-bottom: 50px;
 }
 
 .red-logo {
-  background: url("red-logo.png") no-repeat scroll center transparent;
-  width: 93px;
-  height: 399px;
-  position:absolute;
-  top: 50%;
-  left: 15px;
-  margin:-189.5px 0 0 0;
+    background: url("red-logo.png") no-repeat scroll center transparent;
+    width: 93px;
+    height: 399px;
+    position:absolute;
+    top: 50%;
+    left: 15px;
+    margin:-189.5px 0 0 0;
 }
 .red-logo p{
-  line-height: 93px;
-  margin-top: 221px;
-  transform: rotate(-90deg);
-  font-size: 60px;
-  color: #c9004a;
-  margin-right: 10px;
+    line-height: 93px;
+    margin-top: 221px;
+    transform: rotate(-90deg);
+    font-size: 60px;
+    color: #c9004a;
+    margin-right: 10px;
 }
 .result-content {
-  width: 975px;
-  margin:0 auto;
-  padding-top: 120px;
-  color:#fff;
+    /*width: 975px;*/
+    margin:0 auto;
+    padding-top: 80px;
+    color:#fff;
 }
 
 .result-content h1 {
-  text-align:center;
-  font-size: 36px;
-  margin-bottom: 70px;
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 70px;
 }
 
 .result-lists {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .result-lists .result-block{
-  background: url("galka.png") no-repeat scroll 0 center transparent;
-  width: 50%;
-  margin-bottom: 35px;
-  float:left;
+    background: url(galka.png) no-repeat scroll 0 center transparent;
+    /* width: 50%; */
+    margin-bottom: 35px;
+    /* float: left; */
 }
 
 .result-lists span {
-  padding-left: 25px;
+    padding-left: 25px;
 }
 
 #effetcs {
-  width: 1000px;
-  margin:0 auto;
+    /*width: 1000px;*/
+    margin:0 auto;
 }
 
 .table {
-  background: url("table.png") no-repeat scroll 0 0 transparent;
-  width: 100%;
-  height: 691px;
-  background-size: 1000px 100%;
+    background: url("table.png") no-repeat scroll 0 0 transparent;
+    background: url(table.png) no-repeat scroll 0 0 transparent;
+    /* width: 100%; */
+    /* height: 691px; */
+    /* background-size: 1000px 100%; */
+    background-position: center top;
+    background-size: 100% auto;
 }
 
 .table-content {
-  padding: 75px;
+    padding: 75px;
 }
 #thanhphan .table-content, #tacdong .table-content{
-	padding: 10px 0;
+    padding: 10px 0;
 }
 .table-content h1{
-  color:#9e0039;
-  text-align:center;
-  text-transform:uppercase;
-  font-size: 30px;
-  font-weight:bold;
-  margin-bottom: 15px;
+    color:#9e0039;
+    text-align:center;
+    text-transform:uppercase;
+    font-size: 30px;
+    font-weight:bold;
+    margin-bottom: 15px;
 }
 
 .table-content > p {
-  text-align:center;
-  color:#111;
-  font-size: 30px;
+    text-align:center;
+    color:#111;
+    font-size: 30px;
+    margin-bottom: -20px;
 }
 .table-shows td{
-	padding: 10px;
+    padding: 10px;
 }
 
 .show-block, .show-block50{
-  margin-top: 50px;
-  float:left;
-  width: 25%;
+    margin-top: 50px;
+    /* float: left; */
+    /* width: 25%; */
 }
 .show-block50{
-	width: 50%;
+    width: 50%;
 }
 
 .show-block img {
-  display:block;
-  margin: 0 20px;
+    display:block;
+    margin: 0 20px;
 }
 
 .show-block h3 {
-  color:#898989;
-  margin: 30px 0;
-  padding: 0 20px;
+    color:#898989;
+    margin: 30px 0;
+    padding: 0 20px;
 }
 
 .show-block p {
-  color:#111111;
-  font-size: 18px;
-  padding: 0 20px;
+    color:#111111;
+    font-size: 16px;
+    padding: 0 20px;
+    padding-bottom: 100px;
 }
 
 #spec-tell {
-  width: 1000px;
-  margin:0 auto;
+    /*width: 1000px;*/
+    margin:0 auto;
+    padding-top: 0px;
 }
 
 .spec-left, .spec-center, .spec-right {
-  float:left;
+    float:left;
 }
 
 .spec-left {
-  width: 35%;
+    /*width: 35%;*/
 }
 
 .spec-center {
-  width: 30%;
-  margin-left: 5%;
-  margin-right: 5%;
+    /*width: 30%;*/
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .spec-right {
-  width: 25%;
+    width: 100%;
 }
 
 .spec-name {
-  background: url("podpis.png") no-repeat scroll left center transparent;
-  font-size: 16px;
-  font-weight:bold;
-  margin-top: 20px;
+    background: url("podpis.png") no-repeat scroll left center transparent;
+    font-size: 16px;
+    font-weight:bold;
+    margin-top: 20px;
 }
 
 .spec-name div {
-  padding-left: 105px;
+    padding-left: 105px;
 }
 
 .spec-name span {
-  color:#db1a4a;
+    color:#db1a4a;
 }
 
 .spec-center {
-  font-size: 18px;
+    font-size: 16px;
 }
 
 .spec-center h1{
-  font-size: 36px;
-  margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .spec-right img{
-  display:block;
-  margin:0 auto;
+    display:block;
+    margin:0 auto;
+    width: 100%;
 }
 
 .spec-center p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .formula-block {
-  margin-top: 40px;
-  font-size: 18px;
+    margin-top: 40px;
+    font-size: 16px;
 }
 
 .formula-block span{
-  color:#db1a4a;
-  font-weight:bold;
+    color:#db1a4a;
+    font-weight:bold;
 }
 
 .sertificates {
-  background: url("two-line.png") repeat-x scroll 0 center transparent;
-  width: 940px;
-  margin:40px auto 0;
+    background: url("two-line.png") repeat-x scroll 0 center transparent;
+    /*width: 940px;*/
+    margin:40px auto 0;
 }
 
 .sertificates-block {
-  background: #fff;
-  width: 380px;
-  margin: 0 auto;
-  padding:0 10px;
+    background: #fff;
+    width: 380px;
+    margin: 0 auto;
+    padding:0 10px;
 }
 
 .sertificates-block img {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .sertificates-block img:first-child {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 #comment-fb, #comments, #tacdong, #reviewvn{
-  width: 1000px;
-  margin:0 auto;
+    /*width: 1000px;*/
+    margin:0 auto;
 }
 
 #comment-fb h1, #comments h1, #tacdong h1, #reviewvn h1{
-  font-size: 36px;
-  text-align:center;
-  margin: 60px 0;
+    font-size: 30px;
+    text-align:center;
+    margin: 30px 0;
+    text-transform: uppercase;
 }
-
+#comments h1 {
+    margin: 60px 0 0;
+}
 .comment {
-  background: url("comments-block.png") no-repeat scroll right -25px transparent;
-  margin-bottom: 10px;
-  padding-bottom: 50px;
+    /*background: url("comments-block.png") no-repeat scroll right -25px transparent;*/
+    margin-bottom: 0px;
+    /*padding-bottom: 50px;*/
 }
 
 .comment-image {
-  font-size: 15px;
-  position: relative;
-  float: left;
-  width: 230px;
-  padding-top: 90px;
-  z-index: 2;
+    font-size: 15px;
+    position: relative;
+    float: left;
+    width: 230px;
+    padding-top: 90px;
+    z-index: 2;
 }
 
 .comment-image span{
-  width: 70px;
-  display:block;
-  position:absolute;
-  top: 139px;
-  right: 0;
+    width: 70px;
+    display:block;
+    position:absolute;
+    top: 139px;
+    right: 0;
 }
 
 .comment-content {
-  margin-left: 260px;
-  padding: 52px 80px 35px 35px;
-  border-radius: 20px;
-  -ms-border-radius: 20px;
-  font-size: 20px;
-  font-family: Times New Romans;
-  font-style:italic;
-  text-decoration:underline;
-  line-height: 32px;
-  position:relative;
+    /*margin-left: 260px;*/
+    /*padding: 52px 80px 35px 35px;*/
+    border-radius: 20px;
+    -ms-border-radius: 20px;
+    font-size: 20px;
+    font-family: Times New Romans;
+    font-style:italic;
+    text-decoration:underline;
+    line-height: 32px;
+    position:relative;
 }
 
 .comment-content:after {
 }
 
 #form {
-  background: url("flowers.jpg") no-repeat scroll center -150px transparent;
+    /*background: url("flowers.jpg") no-repeat scroll center -150px transparent;*/
+    background: url("flowers.jpg") no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
 }
 
 .form-content{
-  background: url("cream_.png") no-repeat 55% bottom, url("bottom-bg.png") no-repeat scroll center 0 transparent;
-  width: 990px;
-  height: 628px;
-  margin: 0 auto;
+    /*background: url("cream_.png") no-repeat 55% bottom, url("bottom-bg.png") no-repeat scroll center 0 transparent;*/
+    background: url("bottom-bg.png") no-repeat;
+    /*width: 990px;*/
+    /*height: 628px;*/
+    /*margin: 0 auto;*/
+    background-position: center top;
+    background-size: 100% auto;
+    min-height: 700px;
 }
 
 .form-container {
-  padding: 80px;
+    /*padding: 80px;*/
+    padding-top: 100px;
 }
 
 .form-block {
-  width: 301px;
-  float:left;
+    width: 301px;
+    /*float:left;*/
+    margin: 0 auto;
+    /*margin-top: 100px*/
 }
 
 .form-block h1{
-  font-size: 30px;
-  margin-bottom: 25px;
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 
 .form-block form > div {
-  margin-top: 15px;
-  margin-bottom:3px;
+    margin-top: 15px;
+    margin-bottom:3px;
 }
 
 .form-block span {
-  color:#898989;
-  font-size: 13px;
-  font-family: Tahoma;
+    color:#898989;
+    font-size: 13px;
+    font-family: Tahoma;
 }
 
 .form-block label {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .form-block input[type=text], .input-select {
-  background: url("input.png") no-repeat scroll 0 0 transparent;
-  width: 301px;
-  height: 32px;
-  margin:0;
-  padding:0;
-  width: 100%;
-  height: 32px;
-  text-indent: 10px;
-  margin-top: 3px;
-  border:none;
+    background: url("input.png") no-repeat scroll 0 0 transparent;
+    width: 301px;
+    height: 32px;
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 32px;
+    text-indent: 10px;
+    margin-top: 3px;
+    border:none;
 }
 
 .select {
-  position:relative;
-  cursor:pointer;
+    position:relative;
+    cursor:pointer;
 }
 
 .select-value {
-  background: url("sel.png") no-repeat scroll 95% center transparent;
-  line-height: 32px;
+    background: url("sel.png") no-repeat scroll 95% center transparent;
+    line-height: 32px;
 }
 
 .select-drop {
-  background: url("drop.png") repeat scroll 95% center #fff;
-  border-right:1px solid #dddddd;
-  border-left:1px solid #dddddd;
-  width: 301px;
-  display:none;
-  position:absolute;
-  z-index: 5;
-  top: 25px;
-  left: 0;
-  padding-bottom: 2px;
-  border: none;
+    background: url("drop.png") repeat scroll 95% center #fff;
+    border-right:1px solid #dddddd;
+    border-left:1px solid #dddddd;
+    width: 301px;
+    display:none;
+    position:absolute;
+    z-index: 5;
+    top: 25px;
+    left: 0;
+    padding-bottom: 2px;
+    border: none;
 }
 
 .select-drop.input-select {
-  height: auto;
+    height: auto;
 }
 
 .select-drop div {
-  padding: 5px 0;
-  cursor:pointer;
+    padding: 5px 0;
+    cursor:pointer;
 }
 
 .select-drop div:hover {
-  background: #d3d3d3;
-  color:#fff;
+    background: #d3d3d3;
+    color:#fff;
 }
 
 #phone {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .form-block p {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 .form-block input[type=submit] {
-  background: url("button.png") no-repeat scroll 0 0 transparent;
-  width: 226px;
-  height: 48px;
-  border:none;
-  text-transform:uppercase;
-  color:#fff;
-  font-weight:bold;
-  margin-top: 15px;
-  font-size: 15px;
-  cursor:pointer;
-  letter-spacing: 5px;
-  text-align:center;
+    background: url("button.png") no-repeat scroll 0 0 transparent;
+    width: 226px;
+    height: 48px;
+    border:none;
+    text-transform:uppercase;
+    color:#fff;
+    font-weight:bold;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor:pointer;
+    letter-spacing: 5px;
+    text-align:center;
 }
 
 .form-info {
-  width: 225px;
-  float:right;
-  margin-right: 15px;
+    width: 225px;
+    /*    float:right;
+        margin-right: 15px;*/
+    margin: 0 auto;
+    /*margin-top: 100px*/
 }
 
 .form-info h2 {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .form-info h1 {
-  font-size: 36px;
-  font-weight:bold;
-  text-align:center;
+    font-size: 36px;
+    font-weight:bold;
+    text-align:center;
 }
 
 .icon-beg {
-  background: url("beg.png") no-repeat scroll center 0 transparent;
-  width: 202px;
-  height: 66px;
-  margin:20px auto;
-  font-size: 24px;
-  font-weight:bold;
-  line-height:66px;
-  text-align:center;
+    background: url("beg.png") no-repeat scroll center 0 transparent;
+    width: 202px;
+    height: 66px;
+    margin:20px auto;
+    font-size: 24px;
+    font-weight:bold;
+    line-height:66px;
+    text-align:center;
 }
 
 .form-older-price {
-  font-size: 18px;
-  color:#636363;
-  text-align:center;
+    font-size: 18px;
+    color:#636363;
+    text-align:center;
 }
 
 .form-older-price  span {
-  background: url("grey-procherk.png") no-repeat scroll center center transparent;
+    background: url("grey-procherk.png") no-repeat scroll center center transparent;
 }
 
 .finish-discount {
-  font-size: 18px;
-  text-align:center;
-  margin-top: 20px;
-  line-height: 25px;
+    font-size: 18px;
+    text-align:center;
+    margin-top: 20px;
+    line-height: 25px;
 }
 
 .timer {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 .timer span {
-  display: block;
+    display: block;
 }
 
 .minutes, .seconds, .zap , .form-image {
-  float:left;
+    /*float:left;*/
+    display: inline-block;
 }
 
 .form-image {
-  margin-top: 10px;
-  margin-left: 15px;
+    margin-top: -80px;
+    margin-left: 15px;
 }
 
 .minutes {
@@ -760,57 +796,59 @@ header.active #top-menu ul li:last-child a{
 }
 
 .timer-info {
-  font-size: 15px;
-  text-align:center;
+    font-size: 15px;
+    text-align:center;
 }
 
 .zap {
-  line-height: 80px;
-  font-size: 24px;
-  margin:0 5px;
+    line-height: 80px;
+    font-size: 24px;
+    margin: 0 5px;
+    position: relative;
+    top: -26px;
 }
 
 .minute_1, .minute_2, .seconde_1, .seconde_2 {
-  background: url("timer.png") no-repeat scroll 0 0 transparent;
-  font-family:'PFBeauSansPro-Regular', "Myriad Pro",monospace,  sans-serif ;
-  width: 68px;
-  height: 60px;
-  font-size: 47px;
-  float:left;
-  line-height: 55px;
-  letter-spacing: 8px;
-  padding-left: 4px;
+    background: url("timer.png") no-repeat scroll 0 0 transparent;
+    font-family:'PFBeauSansPro-Regular', "Myriad Pro",monospace,  sans-serif ;
+    width: 68px;
+    height: 60px;
+    font-size: 47px;
+    float:left;
+    line-height: 55px;
+    letter-spacing: 8px;
+    padding-left: 4px;
 }
 
 footer {
-  border-top: 1px solid #d6d6d6;
-  width: 975px;
-  margin:0 auto;
-  padding-top: 15px;
+    border-top: 1px solid #d6d6d6;
+    width: 975px;
+    margin:0 auto;
+    padding-top: 15px;
 }
 
 .footer-left {
-  float:left;
+    float:left;
 }
 
 footer p{
-  color:#898989;
-  font-size: 12px;
-  margin-top: 10px;
+    color:#898989;
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 .footer-right {
-  float:right;
-  text-align:right;
+    float:right;
+    text-align:right;
 }
 
 .error {
-  border: 1px solid red !important;
+    border: 1px solid red !important;
 }
 .trichdan{
-  width: 100%;
-  text-align: center;
-  margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
 }
 .support-icon-right {
     position: fixed;
@@ -819,7 +857,7 @@ footer p{
     z-index: 9;
     overflow: hidden;
     width: 250px;
-    
+
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -849,34 +887,34 @@ footer p{
     text-shadow: #5f424c 1px 1px 0px;
 }
 .support-icon-right h3 span{
-  float: right;
-  margin-top: 7px;
+    float: right;
+    margin-top: 7px;
 }
 .support-icon-right i {
-  background: url("qua-goji.png") no-repeat center;
-  width: 32px;
-  height: 32px;
-  float: left;
-  margin-top:-3px
+    background: url("qua-goji.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-top:-3px
 }
 .online-support {
     display: none;
 }
 #thanhphan{
-/* 	background-color: #e1e3e2; */
-	width: 1000px;
+    /* 	background-color: #e1e3e2; */
+    /*width: 1000px;*/
     margin: 0 auto;
 }
 #thanhphan .result-block{
-	background: url("galka.png") no-repeat scroll 0 center transparent;
+    background: url("galka.png") no-repeat scroll 0 center transparent;
     margin-bottom: 35px;
-	font-weight: normal
+    font-weight: normal
 }
 #thanhphan h2{
-	color: #9e0039;
-	font-size: 20px
+    color: #9e0039;
+    font-size: 20px;
+    margin: 15px auto;
 }
 .nguc ul li{
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-	

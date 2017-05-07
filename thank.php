@@ -16,12 +16,23 @@
         <link rel="stylesheet" href="thank/css/font-awesome.css">
         <link rel="stylesheet" href="thank/css/main.css">
         <link rel="stylesheet" href="thank/css/responsive.css">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-98599694-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
     </head>
     <body>
         <section class="body-sign">
             <div class="center-sign">
                 <div class="tkbn">
-                    <a href="http://yeulanhmanh.com/" class="">
+                    <a href="http://upsizechinhhang.net/" class="">
                         <img src="thank/images/thanks.png" style="max-width:350px;">
                     </a>
                 </div>
@@ -32,7 +43,7 @@
                         <p class="tkdes">Bản quyền thuộc về <a href="http://yeulanhmanh.com/" style="color: red;">"Yêu Lành Mạnh"</a></p>
                         <div class="row">
                             <div class="col-sm-12 btn-end">
-                                <a href="http://banstud100.net/" class="btn-lg-x">Trở về trang chủ</a>
+                                <a href="http://upsizechinhhang.net/" class="btn-lg-x">Trở về trang chủ</a>
                             </div>
                         </div>
                     </div>
